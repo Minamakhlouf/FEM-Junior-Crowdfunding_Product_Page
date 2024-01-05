@@ -1,0 +1,22 @@
+.info__container {
+    padding: 40px 24px; 
+    background-color: white; 
+}
+
+.info__heading {
+    font-size: 20px; 
+    margin-bottom: 35px; 
+}
+
+.info__para {
+    font-size: 16px; 
+    line-height: 1.875; 
+    color: #7a7a7a; 
+    margin-bottom: 35px; 
+}
+
+@media screen and (min-width: 700px) {
+    .info__container {
+        padding: 48px; 
+    }
+}

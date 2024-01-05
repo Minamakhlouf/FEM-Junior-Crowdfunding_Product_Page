@@ -1,0 +1,16 @@
+.project__section {
+    display: flex; 
+    flex-direction: column;
+    gap: 24px; 
+    transform: translateY(-72px); 
+    position: relative; 
+    z-index: 10; 
+    max-width: 730px; 
+    margin: 0 24px; 
+}
+
+@media screen and (min-width: 770px) {
+    .project__section {
+        margin: 0 auto; 
+    }
+}

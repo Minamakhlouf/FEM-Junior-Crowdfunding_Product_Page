@@ -1,0 +1,144 @@
+.project-pledge {
+    margin: 24px 0; 
+    border: 1px solid black; 
+    border-radius: 12px; 
+    position: relative; 
+}
+
+.project-pledge.selected {
+    border: 3px solid #3cb3ab; 
+}
+
+.project-pledge__grid {
+    padding: 32px 28px; 
+    display: grid; 
+    grid-template-columns: 24px 1fr auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "input title" "desc desc" "pledges pledges";
+    gap: 16px; 
+}
+
+.project-pledge__input {
+    grid-area: input; 
+}
+
+.project-pledge__text-flex {
+    display: flex; 
+    flex-direction: column;
+    gap: 8px; 
+    grid-area: title; 
+}
+
+.project-pledge__heading {
+    cursor: pointer; 
+    font-size: 14px; 
+}
+
+.project-pledge__heading:hover {
+    color: #3cb3ab; 
+}
+
+.project-pledge__subheading {
+    color: #3cb3ab; 
+    font-size: 14px; 
+}
+
+.project-pledge__desc {
+    grid-area: desc; 
+    line-height: 1.86; 
+    color: #7a7a7a; 
+    font-size: 14px; 
+}
+
+.project-pledge__pledges {
+    grid-area: pledges; 
+}
+
+.project-pledge__bold {
+    font-weight: bold; 
+    font-size: 18px; 
+}
+
+.project-pledge__dollar-container {
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+    align-items: center; 
+    gap: 16px; 
+    padding: 24px; 
+    border-top: 1px solid #979797; 
+}
+
+.project-pledge__number-title {
+    width: 100%; 
+    font-size: 14px; 
+}
+
+.project-pledge__form {
+    display: flex; 
+    gap: 16px; 
+}
+
+.project-pledge__number-input {
+    width: 100px; 
+    height: 48px; 
+    border-radius: 24px; 
+    border: 1px solid #3cb3ab; 
+    text-align: center; 
+}
+
+.project-pledge__submit {
+    padding: 16px 24px; 
+    border-radius: 24px; 
+    font-size: 14px; 
+    color: white; 
+    background: #3cb3ab;  
+    border: none; 
+    cursor: pointer; 
+    transition: all 0.2s ease-in-out; 
+}
+
+.project-pledge__submit:hover {
+    background: #147a73; ;
+}
+
+.project-pledge__backdrop {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    z-index: 100; 
+    background-color: white;
+    opacity: 0.6; 
+}
+
+@media screen and (min-width: 700px) {
+    .project-pledge__grid {
+        grid-template-areas: "input title pledges" ". desc desc";
+        grid-template-rows: auto auto;
+    }
+    .project-pledge__text-flex {
+        flex-direction: row; 
+        align-items: center;
+    }
+    .project-pledge__heading, .project-pledge__subheading {
+        font-size: 16px; 
+    }
+    .project-pledge__desc {
+        font-size: 15px; 
+    }
+    .project-pledge__bold {
+        font-size: 18px; 
+    }
+    .project-pledge__pledges {
+        font-size: 15px; 
+    }
+    .project-pledge__dollar-container {
+        flex-direction: row;
+    }
+    .project-pledge__number-title {
+        text-align: left;
+        font-size: 15px; 
+    }
+}

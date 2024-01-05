@@ -1,0 +1,95 @@
+.project__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 24px;
+    border: 1px solid black; 
+    background-color: white;
+    text-align: center; 
+}
+
+.heading__logo {
+    transform: translateY(-50%); 
+}
+
+.project__text {
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px; 
+    margin-bottom: 40px; 
+    align-items: center;
+}
+
+.project__text h1 {
+    font-weight: bold; 
+    font-size: 20px; 
+}
+
+.project__text p {
+    font-size: 14px; 
+    line-height: 1.71; 
+    color: #7a7a7a; 
+}
+
+.project__btn-container {
+    display: flex; 
+    justify-content: space-between;
+    width: 100%; 
+    margin-bottom: 49px; 
+}
+
+.project__btn {
+    border-radius: 35px;
+    border: none;  
+    font-size: 16px; 
+    font-family: 'Commissioner', sans-serif;
+    font-weight: bold; 
+    cursor: pointer; 
+}
+
+.project__btn--green {
+    background-color: hsla(176, 50%, 47%, 1);
+    color: white; 
+    padding: 18px 40px; 
+    transition: all 0.2s ease-in-out; 
+}
+
+.project__btn--green:hover {
+    background-color: hsl(176, 72%, 28%);
+}
+
+.project__btn--flex {
+    display: flex; 
+    align-items: center;
+    color: hsl(0, 0%, 48%); 
+    transition: all 0.2s ease; 
+    background-color: #f2f2f2;
+}
+
+.project__btn--flex span {
+    display: none; 
+}
+
+.bookmarked__true {
+    color: hsl(176, 72%, 28%); 
+}
+
+@media screen and (min-width: 550px) {
+    .project__heading {
+        padding: 0 48px; 
+    }
+
+    .project__text h1 {
+        font-size: 28px; 
+    }
+    .project__text p {
+        font-size: 16px; 
+    }
+    .project__btn--flex {
+        gap: 16px; 
+        padding-right: 24px; 
+    }
+    .project__btn--flex span {
+        display: block; 
+    }
+}
